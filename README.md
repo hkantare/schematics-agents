@@ -4,6 +4,15 @@ The IBM Cloud Schematics Agents extends Schematics ability to reach your private
 
 This Agent repository helps you to provision the infrastructure required for an Agent and deploys the services on the provisioned infrastructure.
 
+
+## Release notes
+This release contains the following fixes
+- Unknown certificate issue while trying to clone repo
+- Intermittent `409` error for JobRunner Service
+- Incomplete runtime logs
+- Bug Fixes
+
+
 ## Table of Contents
 
 1. [Prerequisites](##Prerequisites)

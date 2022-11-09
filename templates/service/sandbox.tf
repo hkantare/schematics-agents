@@ -36,6 +36,8 @@ resource "kubernetes_config_map" "sandbox" {
     SANDBOX_LOGGERLEVEL                = "-1"
     SANDBOX_SHUTDOWNREPORTINTERVAL     = "600"
     SANDBOX_WHITELISTEXTN              = ".tf,.tfvars,.md,.yaml,.sh,.txt,.yml,.html,.gitignore,.tf.json,license,.js,.pub,.service,_rsa,.py,.json,.tpl,.cfg,.ps1,.j2,.zip,.conf,.crt,.key,.der,.jacl,.properties,.cer,.pem,.tmpl,.netrc"
+    SANDBOX_INSECURESKIPVERIFY         = "false" 
+
   }
   depends_on = [kubernetes_namespace.namespace]
 }
