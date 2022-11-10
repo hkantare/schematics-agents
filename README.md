@@ -7,7 +7,7 @@ This Agent repository helps you to provision the infrastructure required for an 
 
 ## Release notes
 This release contains the following fixes
-- Unknown certificate issue while trying to clone repo
+- Ability to skip SSL certificate validation when using Self-Signed server certificates in private GHE
 - Intermittent `409` error for JobRunner Service
 - Incomplete runtime logs
 - Bug Fixes
