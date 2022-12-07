@@ -20,7 +20,7 @@ locals {
   #Schematics agent jobrunner image ID
   schematics_jobrunner_image = "icr.io/schematics-remote/schematics-job-runner:eecd8d0b-210"
   #Schematics agent job12 image ID
-  schematics_runtime_job_image = "icr.io/schematics-remote/schematics-agent-ws-job-20220704:60824f4e-276"
+  schematics_runtime_job_image = "icr.io/schematics-remote/schematics-agent-ws-job-20221202:5df1c1a2-392"
   #schematics_sandbox_image
   schematics_sandbox_image = "icr.io/schematics-remote/schematics-sandbox:d94e2078-339"
   #Schematics environment (dev|stage|prod)
