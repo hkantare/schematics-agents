@@ -11,7 +11,7 @@
 variable "agent_prefix" {
   description = "You will use this prefix, for vpc, cluster and  observability. (Max length 27 chars)"
   type        = string
-  default     = "my-project"
+  default     = "agents-stage"
 
   # validation {
   #   error_message = "Unique ID must begin and end with a letter and contain only letters, numbers, and - characters. The maximum length for prefix is 27 characters"
@@ -38,7 +38,7 @@ variable "resource_group_name" {
 variable "tags" {
   description = "A list of tags for the agent infrastructure"
   type        = list(string)
-  default     = ["my-project:agent"]
+  default     = ["agent-stage:agent"]
 
   # validation {
   #   error_message = "Tags must match the regex `^([a-z]|[a-z][-a-z0-9]*[a-z0-9][:][a-z]|[a-z][-a-z0-9]*[a-z0-9])$`."

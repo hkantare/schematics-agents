@@ -21,7 +21,7 @@ variable "create_vpc" {
 variable "prefix" {
   description = "A unique identifier need to provision resources. Must begin with a letter"
   type        = string
-  default     = "my-project-multizone"
+  default     = "agent-stage-multizone"
 
   validation {
     error_message = "Unique ID must begin and end with a letter and contain only letters, numbers, and - characters."

@@ -23,7 +23,7 @@ Link this repository to the schematics workspace and run `Generate Plan` and `Ap
 
 | name | description | type | required | default | sensitive |
 | ---------- | -------- | -------------- | ---------- | ----------- | ----------- |
-| agent_name | Name of the agent. | string | | my-project | |
+| agent_name | Name of the agent. | string | | agent-stage | |
 | location| Location of the agent services.  It must be the same as the agent infrastructure/cluster location. | string | | us-south | |
 | resource_group_name | Name of resource group used where agent infrastructure was provisioned. | string | &check; | | |
 | profile_id | The IBM Cloud IAM Trusted Profile ID which provides authorization for agents to process jobs. More info can be found [here](https://cloud.ibm.com/docs/account?topic=account-create-trusted-profile&interface=ui) | string | &check; | | &check; |

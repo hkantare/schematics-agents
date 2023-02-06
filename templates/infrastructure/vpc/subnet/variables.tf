@@ -16,7 +16,7 @@
 variable prefix {
   description = "Prefix to be added to the beginning of each subnet name"
   type        = string
-  default     = "my-project-subnet"
+  default     = "agent-stage-subnet"
 }
 
 variable vpc_id {

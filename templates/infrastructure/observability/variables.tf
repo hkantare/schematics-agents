@@ -20,7 +20,7 @@ variable "enable_observability" {
 variable "prefix" {
   description = "A unique identifier need to provision resources. Must begin with a letter"
   type        = string
-  default     = "my-project"
+  default     = "agent-stage"
 
   validation {
     error_message = "Unique ID must begin and end with a letter and contain only letters, numbers, and - characters."
@@ -47,7 +47,7 @@ variable "resource_group_id" {
 variable "tags" {
   description = "A list of tags to be added to resources"
   type        = list(string)
-  default     = ["my-project:agent"]
+  default     = ["agent-stage:agent"]
 }
 
 

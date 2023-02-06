@@ -7,7 +7,7 @@ This module creates a LogDNA instance and a Sysdig Instance in a single region i
 Name                    | Type         | Description                                                                                                   | Default
 ----------------------- | ------------ | ------------------------------------------------------------------------------------------------------------- | ----------------------
 enable_observability    | bool         | True to create new Observability Services. False if Observability Service instances are already existing. | |
-prefix                  | string       | A unique identifier need to provision resources. Must begin with a letter                                     | my-project
+prefix                  | string       | A unique identifier need to provision resources. Must begin with a letter                                     | agent-stage
 region                  | string       | Region where resources will be created                                                                        | us-south
 resource_group_id       | string       | ID of the resource group where instances will be created                                                      | 
 tags                    | list(string) | A list of tags to be added to 

@@ -45,7 +45,7 @@
                 {
                     "name": "agent_name",
                     "type": "string",
-                    "value": "my-project"
+                    "value": "agent-stage"
                 }
             ]
         }

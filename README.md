@@ -83,12 +83,12 @@ Click [here](https://cloud.ibm.com/docs/schematics?topic=schematics-agents-setup
 
 | name | description | type | required | default | sensitive |
 | ---------- | -------- | -------------- | ---------- | ----------- | ----------- |
-| agent_prefix | You will use this prefix, for `vpc`, `cluster`, and  `observability`. (Maximum length 27 chars) |  |  | my-project |  |
+| agent_prefix | You will use this prefix, for `vpc`, `cluster`, and  `observability`. (Maximum length 27 chars) |  |  | agent-stage |  |
 | location | Location of the Agent infrastructure.  Note: For Beta, the Agent must be deployed in a freshly provisioned `VPC`, `IKS Cluster`, `Log Analysis` instances. |  |  | `us-south` |  |
 | resource_group_name | Name of resource group used where Agent infrastructure was provisioned. | string | &check; | |  |
-| tags | A list of tags for the Agent infrastructure | list(string) | | my-project:agent | |
+| tags | A list of tags for the Agent infrastructure | list(string) | | agent-stage:agent | |
 | ibmcloud_api_key | The IBM Cloud API Key used to provision the schematics Agent infrastructure resources. If not provided, then resources will be provisioned in currently logged in user account. | string | | | &check; |
-| agent_name | Name of the agent. | string | | my-project | |
+| agent_name | Name of the agent. | string | | agent-stage | |
 | location| Location of the agent services.  It must be the same as the agent infrastructure/cluster location. | string | | us-south | |
 | resource_group_name | Name of resource group used where agent infrastructure was provisioned. | string | &check; | | |
 | profile_id | The IBM Cloud IAM Trusted Profile ID which provides authorization for agents to process jobs. More info can be found [here](https://cloud.ibm.com/docs/account?topic=account-create-trusted-profile&interface=ui) | string | &check; | | &check; |

@@ -11,7 +11,7 @@
 variable "agent_name" {
   description = "Name of the agent."
   type        = string
-  default     = "my-project"
+  default     = "agent-stage"
 
   # validation {
   #   error_message = "Unique ID must begin and end with a letter and contain only letters, numbers, and - characters. The maximum length for prefix is 27 characters"
@@ -75,7 +75,7 @@ variable "cluster_id" {
 variable "logdna_name" {
   description = "Name of the IBM Log Analysis service instance, used to send the agent logs."
   type        = string
-  #default     = "my-project-logdna"
+  #default     = "agent-stage-logdna"
 }
 
 variable "ibmcloud_api_key" {

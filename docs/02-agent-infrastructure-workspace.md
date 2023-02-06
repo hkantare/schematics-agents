@@ -51,10 +51,10 @@ Note:
 
 | Input variable  | Description                          | Example         |
 |---------------------------|--------------------------------------|-----------------|
-| agent_prefix          | You will use this prefix, for vpc, cluster and  observability. (Max length 27 chars) | `my-project` |
+| agent_prefix          | You will use this prefix, for vpc, cluster and  observability. (Max length 27 chars) | `agent-stage` |
 | location    | Location of the agent infrastructure.  Note: For Beta, the agent must be deployed in a freshly provisioned VPC, IKS Cluster, Log Analysis instance. | `us-south` |
 | resource_group_name  | enter name of Resource Group where infrastructure resources will be provisioned. | | 
-| tags           |  A list of tags for the agent infrastructure | my-project:agent | 
+| tags           |  A list of tags for the agent infrastructure | agent-stage:agent | 
 | ibmcloud_api_key             | The IBM Cloud API Key used to provision the schematics agent infrastructure resources. If not provided, then resources will be provisioned in currently logged in user account. | |
 
 2. **Provision the `Schematics Agents Infrastructure`**

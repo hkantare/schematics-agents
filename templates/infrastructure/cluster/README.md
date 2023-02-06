@@ -7,10 +7,10 @@ This module creates a Kubernetes cluster with one worker pool of 3 zones, one wo
 Name                    | Type         | Description                                                                                                   | Default
 ----------------------- | ------------ | ------------------------------------------------------------------------------------------------------------- | ----------------------
 create_cluster          | bool         | Enable this to provision VPC cluster. | true
-prefix                  | string       | A unique identifier need to provision resources. Must begin with a letter | my-project
+prefix                  | string       | A unique identifier need to provision resources. Must begin with a letter | agent-stage
 region                  | string       | Region where resources will be created | us-south
 resource_group_id       | string       | ID of the resource group where instances will be created | 
-tags                    | list(string) | A list of tags to be added to resources   | [ "my-project:agent" ]
+tags                    | list(string) | A list of tags to be added to resources   | [ "agent-stage:agent" ]
 worker_pools            | list(object) | List of maps describing worker pools       | []
 cos_id | string         | ID of COS instance | null
 kms_guid       | string       | GUID of Key Protect Instance    | null
