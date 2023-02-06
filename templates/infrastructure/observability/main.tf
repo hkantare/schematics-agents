@@ -32,16 +32,16 @@ resource "ibm_resource_instance" "activity_tracker" {
 # LogDNA
 ##############################################################################
 
-resource "ibm_resource_instance" "logdna" {
-  count             = var.enable_observability == true ? 1 : 0
-  name              = "${var.prefix}-logdna"
-  location          = var.region
-  plan              = var.logdna_plan
-  resource_group_id = var.resource_group_id
-  service           = "logdna"
-  service_endpoints = var.service_endpoints
-  tags              = var.tags
-}
+# resource "ibm_resource_instance" "logdna" {
+#   count             = var.enable_observability == true ? 1 : 0
+#   name              = "${var.prefix}-logdna"
+#   location          = var.region
+#   plan              = var.logdna_plan
+#   resource_group_id = var.resource_group_id
+#   service           = "logdna"
+#   service_endpoints = var.service_endpoints
+#   tags              = var.tags
+# }
 
 ##############################################################################
 
