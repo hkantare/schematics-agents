@@ -86,9 +86,9 @@ output "cluster_private_service_endpoint_port" {
 # Logging and Monitoring Outputs
 ##############################################################################
 
-output "logdna_name" {
-  description = "Name of LogDna created"
-  value       = module.observability.*.logdna_name
-}
+# output "logdna_name" {
+#   description = "Name of LogDna created"
+#   value       = module.observability.*.logdna_name
+# }
 
 ##############################################################################
