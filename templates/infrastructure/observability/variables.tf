@@ -33,10 +33,10 @@ variable "region" {
   type        = string
   default     = "us-south"
 
-  validation {
+  /*validation {
     error_message = "Can only be provisioned in au-syd, eu-de, us-east, or us-south."
     condition     = contains(["us-south", "au-syd", "eu-de", "us-east"], var.region)
-  }
+  }*/
 }
 
 variable "resource_group_id" {
